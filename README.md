@@ -63,7 +63,7 @@ AFRAME.registerComponent('addamorph',{
 })
 ```
 
-And using such an approach (or simply in HTML) you can see how you could for example, use the same model, but tweaking different morphTargets produce a variety of objects/characters. Example of a family of puffer fish generated from the same model below.
+And using such an approach (or simply in HTML) you can see how you could for example, use the same model, but tweaking different morphTargets produce a variety of objects/characters. Example of a family of weird puffer-like fish generated from the same model below.
 
 ![alt text](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/variations.png?raw=true "Using one model with many morphTargets we can create a range of similar but distinct entities")
 
