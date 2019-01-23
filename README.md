@@ -3,6 +3,8 @@ An a-frame component that allows you to target and control a gltf model's morphT
 
 ![Gltf-morph in action](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/puffer.gif?raw=true)
 
+morphTargets are exported as part of `GLTF` models when shape keys have been created in Blender. Here is a summary of what they are. "Shape keys are modifications of the original mesh that you can animate and mix with each other. Previously called Relative Vertex Keys (RVK), one of their major uses is to create facial expressions. The idea behind Shape keys is simple. The basic, undeformed mesh you start with is the "Basis" shape. From [here](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Advanced_Tutorials/Advanced_Animation/Guided_tour/Mesh/Shape). As well as using them for animations though, a combination of of shape keys used in different ways is a good way to be able to use the same model but with many possible variations and degrees of those variations resulting in a set of fundamentally similar but discrete objects/characters.
+
 # Basic usage
 
 To simply target and effect a morph target, add the component as you would any other. Specific the name of the morph and the value that you want to set it to (0-1)
@@ -77,7 +79,7 @@ If you have a model and are not sure if there are morphTargets available, or don
 
 I only know how to use Blender where morphTargets are produced by exporting a model with Key Shapes. I'm afraid I don't know if exports are the same from other packages or whether you could target the morphTargets from other model types. 
 
-There are many tutorials on both Blender and creating Key Shapes online but [here is a good place to start](https://www.youtube.com/watch?v=n0VspDUOErE) for all basic types of animation in Blender, specific discussion of Key shapes [starts here](https://youtu.be/n0VspDUOErE?t=737) 
+There are many tutorials on both Blender and creating shape keys online but [here is a good place to start](https://www.youtube.com/watch?v=n0VspDUOErE) for all basic types of animation in Blender, specific discussion of Key shapes [starts here](https://youtu.be/n0VspDUOErE?t=737) 
 
 
 
