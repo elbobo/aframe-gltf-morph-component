@@ -36,7 +36,7 @@ If there are multiple morphTargets in the model, they can be distinguished with 
     gltf-morph__spike="morphtarget:Spikes out;value:1">
   </a-entity>
 ```
-morphTargets can also be animated using the animation component (although in most cases it might make more sense to export the animations from Blender and trigger them using the animation-mixer component. (You need to add the morph target component you want to animate on to the entity before you can animate it).
+morphTargets can also be animated using the [animation component](https://github.com/supermedium/superframe/tree/master/components/animation) (although in most cases it might make more sense to export the animations from Blender and trigger them using the [animation-mixer component](https://github.com/donmccurdy/aframe-extras/tree/master/src/loaders). (You need to add the morph target component you want to animate on to the entity before you can animate it).
 
 ```html
    <a-entity 
@@ -77,7 +77,7 @@ If you have a model and are not sure if there are morphTargets available, or don
 
 I only know how to use Blender where morphTargets are produced by exporting a model with Key Shapes. I'm afraid I don't know if exports are the same from other packages or whether you could target the morphTargets from other model types. 
 
-There are many tutorials on both Blender and creating Key Shapes online but here is a good place to start for all basic types of animation in Blender 
+There are many tutorials on both Blender and creating Key Shapes online but [here is a good place to start](https://www.youtube.com/watch?v=n0VspDUOErE) for all basic types of animation in Blender, specific discussion of Key shapes [starts here](https://youtu.be/n0VspDUOErE?t=737) 
 
 
 
