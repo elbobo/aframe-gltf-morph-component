@@ -16,7 +16,7 @@ To simply target and effect a morph target, add the component as you would any o
 ```html
   <head>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="puturlhere.js"></script>
+    <script src="Please copy the script from inside the dist folder or from the bottom of this page, name it and put that name here"></script>
   </head>
   <body>
     <a-scene>
@@ -86,6 +86,65 @@ I only know how to use Blender where morphTargets are produced by exporting a mo
 There are many tutorials on both Blender and creating `shape keys` online but [here is a good place to start](https://www.youtube.com/watch?v=n0VspDUOErE) for all basic types of animation in Blender, specific discussion of Key shapes [starts here](https://youtu.be/n0VspDUOErE?t=737).
 
 Feedback welcome as ever.
+
+# The code
+
+Without rawgit I don't know how to provide a direct link to the code. For now, please find below to code to copy below (Its not that much). Alternatively you can take it from the `dist` folder.
+
+```javascript
+AFRAME.registerComponent('gltf-morph', {
+
+  multiple: true,
+
+  schema:{
+    morphtarget: {type: 'string', default: ''},
+    value: {type: 'number', default: 0},
+  },//end schema
+
+  init: function(){
+
+    //make sure object3D is set at first
+    this.el.addEventListener('object3dset', () =>{ 
+      
+      //run morpher function
+      this.morpher()
+
+    });
+
+  },//end init
+  
+  update: function(){
+    
+    //run morpher function
+    this.morpher()
+    
+  },//end update
+
+  morpher: function(){
+    
+    //get the mesh
+    var mesh = this.el.object3D
+    
+    //traverse it looking for morphtargets and targetnames
+    mesh.traverse((o) => {
+
+      //if morphtargets exist & targetNames exist
+      if ( o.morphTargetInfluences && o.userData.targetNames ){
+
+        //store the array position of the passed targetname
+        var pos = o.userData.targetNames.indexOf(this.data.morphtarget);
+
+        //target that morphtarget and update value
+        o.morphTargetInfluences[pos] = this.data.value
+
+      }//end if
+
+    });//end traverse
+    
+  },//end morpher
+
+})//end morph
+```
 
 
 
