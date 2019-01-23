@@ -3,7 +3,9 @@ An a-frame component that allows you to target and control a gltf model's morphT
 
 ![Gltf-morph in action](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/puffer.gif?raw=true)
 
-morphTargets are exported as part of `GLTF` models when shape keys have been created in Blender. Here is a summary of what they are. "Shape keys are modifications of the original mesh that you can animate and mix with each other. Previously called Relative Vertex Keys (RVK), one of their major uses is to create facial expressions. The idea behind Shape keys is simple. The basic, undeformed mesh you start with is the "Basis" shape. From [here](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Advanced_Tutorials/Advanced_Animation/Guided_tour/Mesh/Shape). As well as using them for animations though, a combination of of shape keys used in different ways is a good way to be able to use the same model but with many possible variations and degrees of those variations resulting in a set of fundamentally similar but discrete objects/characters.
+morphTargets are exported as part of `GLTF` models when shape keys have been created in Blender. This is summary of what they are taken from [here](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Advanced_Tutorials/Advanced_Animation/Guided_tour/Mesh/Shape). `Shape keys are modifications of the original mesh that you can animate and mix with each other. Previously called Relative Vertex Keys (RVK), one of their major uses is to create facial expressions. The idea behind Shape keys is simple. The basic, undeformed mesh you start with is the "Basis" shape.` 
+
+As well as using them for animations though, a combination of of shape keys used in different ways is a good way to be able to use the same model but with many possible variations and degrees of those variations resulting in a set of fundamentally similar but discrete objects/characters.
 
 # Basic usage
 
