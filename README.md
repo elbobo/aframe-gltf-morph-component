@@ -1,7 +1,7 @@
 # aframe-gltf-morph-component
-An a-frame component that allows you to target and control a gltf model's morphTargets created in Blender.
+An a-frame component that allows you to target and control a gltf model's morphTargets created in [Blender](https://www.blender.org/).
 
-![alt text](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/puffer.gif?raw=true "Gltf-morph in action")
+![Gltf-morph in action](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/puffer.gif?raw=true)
 
 # Basic usage
 
@@ -60,6 +60,28 @@ AFRAME.registerComponent('addamorph',{
 ```
 
 And using such an approach (or simply in HTML) you can see how you could for example, use the same model, but tweaking different morphTargets produce a variety of objects/characters. Example of a family of puffer fish generated from the same model below.
+
+![alt text](https://github.com/elbobo/aframe-gltf-morph-component/blob/master/variations.png?raw=true "Using one model with many morphTargets we can create a range of similar but distinct entities")
+
+# API
+
+Property | Description | Default
+--- | --- | ---
+morphtarget | Name of morphTarget, can be found as part of the `GLTF` model | ''
+value | Value that you want to set that morphTarget to (0 - 1) | 0
+
+
+# Notes/Caveats
+
+If you have a model and are not sure if there are morphTargets available, or don't know what they're called. I recommend using [Don McCurdy's GLTF viewer](https://gltf-viewer.donmccurdy.com/) where you can see the available morphTargets and adjust them.
+
+I only know how to use Blender where morphTargets are produced by exporting a model with Key Shapes. I'm afraid I don't know if exports are the same from other packages or whether you could target the morphTargets from other model types. 
+
+There are many tutorials on both Blender and creating Key Shapes online but here is a good place to start for all basic types of animation in Blender 
+
+
+
+
 
 
 
