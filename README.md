@@ -36,7 +36,7 @@ If there are multiple morphTargets in the model, they can be distinguished with 
     gltf-morph__spike="morphtarget:Spikes out;value:1">
   </a-entity>
 ```
-morphTargets can also be animated using the [animation component](https://github.com/supermedium/superframe/tree/master/components/animation) (although in most cases it might make more sense to export the animations from Blender and trigger them using the [animation-mixer component](https://github.com/donmccurdy/aframe-extras/tree/master/src/loaders). (You need to add the morph target component you want to animate on to the entity before you can animate it).
+morphTargets can also be animated using the [animation component](https://github.com/supermedium/superframe/tree/master/components/animation) although in most cases it might make more sense to export the animations from Blender and trigger them using the [animation-mixer component](https://github.com/donmccurdy/aframe-extras/tree/master/src/loaders). (You need to add the morph target component you want to animate on to the entity before you can animate it).
 
 ```html
    <a-entity 
